@@ -1,0 +1,31 @@
+<style>
+.my-video {
+display: block;
+margin: 0 auto;
+display: none;
+width: 70%; /* Set the width of the video */
+height: auto; /* Maintain the aspect ratio */
+}
+@media (min-width: 768px) {
+.desktop-video {
+display: block;
+}
+}
+
+/* Show mobile video on smaller screens */
+@media (max-width: 767px) {
+.mobile-video {
+display: block;
+}
+}
+</style>
+<video class="my-video mobile-video" muted autoplay playsinline loop>
+<source src="https://cdn.shopify.com/videos/c/o/v/7b3fd34dba934c57bfbb9336e77006d6.mp4" type="video/mp4">
+</video>
+
+<video class="my-video desktop-video" muted autoplay playsinline loop>
+<source src="https://cdn.shopify.com/videos/c/o/v/2b5241247e3041a68c286919ef53c716.mp4">
+</video>
+
+
+//this is the liquid code for putting an autoplay video on shopify with two different link for mobile view and other for desktop view//
